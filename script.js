@@ -55,4 +55,9 @@ function uploadFile(file) {
   fileList.appendChild(li);
   console.log("Title of uploaded file: " + file.name);
 
+  const uploadedFileList = document.getElementById('file_list');
+  const pElement = uploadedFileList.getElementsByTagName('p')[0];
+  if (pElement) {
+    uploadedFileList.removeChild(pElement);
+  }
 }
