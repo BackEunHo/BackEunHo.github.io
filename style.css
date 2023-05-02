@@ -36,14 +36,15 @@ section#drop-area {
   justify-content: center;
   align-items: center;
 }
-
+section#drop-area:hover {
+  background-color: #f7f7f7;
+}
 #drop-area.highlight {
   background-color: #f7f7f7;
 }
 
-section#drop-area p {
+section p {
   font-size: 24px;
-  margin: 0;
 }
 
 section#file_list {
@@ -64,10 +65,54 @@ aside {
 }
 
 #funcion_list{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.funBtn{
   border: 2px dashed #ccc;
   background-color: #f0f0f0;
   border-radius: 10px;
-  height: 100%;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.funBtn:hover {
+  cursor: pointer;
+}
+.funBtn:active {
+  background-color: beige;
+}
+.funBtn:visited {
+  background-color: #f7f7f7;
+}
+
+.funBtn_bottom {
+  border: 2px dashed #ccc;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.funBtn_bottom:hover {
+  cursor: pointer;
+}
+.funBtn_bottom:active {
+  background-color: beige;
+}
+.funBtn_bottom:visited {
+  background-color: #f7f7f7;
 }
 
 footer {
