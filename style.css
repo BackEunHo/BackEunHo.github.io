@@ -38,6 +38,7 @@ section#drop-area {
 }
 section#drop-area:hover {
   background-color: #f7f7f7;
+  cursor: pointer;
 }
 #drop-area.highlight {
   background-color: #f7f7f7;
@@ -57,7 +58,10 @@ section#file_list {
   justify-content: center;
   align-items: center;
 }
-
+section#file_list li:hover{
+  cursor: pointer;
+  background-color: #ccc;
+}
 aside {
   border-radius: 10px;
   grid-area: aside;
